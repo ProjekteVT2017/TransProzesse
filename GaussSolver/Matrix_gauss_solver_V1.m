@@ -1,24 +1,19 @@
 %Gauss Seidel Solver 
-from source https://de.mathworks.com/matlabcentral/answers/
-303634-writing-a-code-to-attempt-to-
-make-matrix-diagonally-dominant 2017-11-05 
+%from source https://de.mathworks.com/matlabcentral/answers/
+%303634-writing-a-code-to-attempt-to-
+%make-matrix-diagonally-dominant 2017-11-05 
 
 clear;
 clc; 
 
 %Input Matrix A 
 A= [
-    1 7 2
-    8 2 3;
-    3 1 9; 
-    
-    ]; 
-   % richtige Reihenfolge diagonal
-    %[8 2 3;
-    % 1 7 2; 
-    %[3 1 9]  
+    .7 .58 .15 .24; 
+    .14 .09 .1 .65;
+    .14 .22 .54 .10; 
+    .65 .11 .21 .01];  
 
-b=[1; 8; 3]; 
+b=[.15 ; .25; .4; .2]; 
 
 [m,n]=size(A); 
 
