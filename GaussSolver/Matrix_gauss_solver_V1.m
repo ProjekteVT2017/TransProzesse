@@ -8,8 +8,8 @@ clc;
 
 %Input Matrix A 
 A= [
-    .7 .58 .15 .24; 
-    .14 .09 .1 .65;
+    .07 .58 .15 .24; 
+    .14 .09 .10 .65;
     .14 .22 .54 .10; 
     .65 .11 .21 .01];  
 
@@ -53,7 +53,7 @@ ww=1;
      end
    end
  end 
-fprintf ('Matrix A successfully rearranged to diagonal dominat') 
+fprintf ('Matrix A successfully rearranged to diagonal dominant \n') 
 disp(A); 
   
 TOL=1e-4; 
@@ -77,5 +77,5 @@ while max(Error_eval) > 0.001
 end
 
 %% Display Results
-fprintf ('The soltuion of x is: \n %f\n %f\n %f\n', x)
+fprintf ('The solution of x is: \n %f\n %f\n %f\n %f\n ', x)
 fprintf('number of iterations is: %f\n', iteration)
